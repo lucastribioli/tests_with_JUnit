@@ -18,4 +18,12 @@ public class CalculadoraTest {
 
         Assertions.assertEquals(-10, soma);
     }
+
+    @Test
+    public void deveriaSomarDoisNumerosMisturadoNegativosEPositivos(){
+        Calculadora calculadora = new Calculadora();
+        int soma = calculadora.somar(3, -7);
+
+        Assertions.assertEquals(-4, soma);
+    }
 }
